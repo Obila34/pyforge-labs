@@ -37,3 +37,26 @@ def quiz_student(topic: str) -> str:
     Answer: [correct letter]
     
     After the student answers, mark them and give encouraging feedback."""   
+
+#Study Planner
+
+def study_planner(subject: str, days_until_exam: int) -> str:
+    """Creates a day-by-day study plan for a student preparing for an exam.
+
+    Args:
+        subject: The subject the student is preparing for.
+        days_until_exam: The number of days the student has until their exam.
+
+    Returns:
+        A structured day-by-day study schedule with topics and goals.
+    """
+    return f"""Create a detailed {days_until_exam}-day study plan for {subject}.
+    
+    Format it exactly like this:
+    
+    Day 1: [Topic to cover]
+    - Goal: [What the student should achieve]
+    - Resources: [What to read or watch]
+    - Practice: [Exercise to do]
+    
+    Repeat for each day. End with exam-day tips."""
